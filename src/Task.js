@@ -1,8 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './task.css';
 
 const Task = ({ task }) => {
-  return <div>{task.name}</div>;
+  const completion = task.completed ? 'complete' : 'incomplete';
+
+  return (
+    <p className="task">
+      <span className={completion}>{task.completed ? '✓' : '×'}</span>
+      <span className="task-name">{task.name}</span>
+    </p>
+  );
 };
 
 Task.propTypes = {

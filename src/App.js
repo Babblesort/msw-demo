@@ -1,9 +1,10 @@
 import TaskList from './TaskList';
+import './app.css';
 
 const App = () => {
   return (
-    <div>
-      <h1 className="App">MSW Demo</h1>
+    <div className="app">
+      <h1 className="app-title">MSW Demo</h1>
       <TaskList />
     </div>
   );

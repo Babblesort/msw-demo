@@ -1,0 +1,26 @@
+.task {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.task > span {
+  display: inline-block;
+  width: 4rem;
+}
+
+.task > span.complete {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: green;
+}
+
+.task > span.incomplete {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: brown;
+}
+
+.task > span.task-name {
+  width: 25rem;
+  font-size: 1.5rem;
+}

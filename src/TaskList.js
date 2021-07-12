@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getTasks } from './api/tasksService';
 import Task from './Task';
+import './tasklist.css';
 
 const TaskList = () => {
   const [error, setError] = useState(null);
@@ -22,8 +23,8 @@ const TaskList = () => {
 
   return (
     <div>
-      <h3>TaskList</h3>
-      {error !== null && <h4>{error}</h4>}
+      <h2 className="tasklist">TaskList</h2>
+      {error && <h4 className="error">{error}</h4>}
       {tasks.map((task) => (
         <Task task={task} key={task.id} />
       ))}
