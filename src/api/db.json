@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Build all the things",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "name": "Fix all the broken stuff",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "name": "Design all the widgets",
+      "completed": false
+    }
+  ]
+}
