@@ -23,7 +23,7 @@ const TaskList = () => {
 
   return (
     <div>
-      <h2 className="tasklist">TaskList</h2>
+      <h2 className="tasklist">Task List</h2>
       {error && <h4 className="error">{error}</h4>}
       {tasks.map((task) => (
         <Task task={task} key={task.id} />
