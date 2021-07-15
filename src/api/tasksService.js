@@ -1,6 +1,3 @@
-import httpClient from './httpClient';
+import { httpClient } from './httpClient';
 
-export const getTasks = async () => {
-  const response = await httpClient.get('/tasks');
-  return response;
-};
+export const getTasks = async () => await httpClient.get('/tasks');
