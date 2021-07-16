@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:msw": "REACT_APP_USE_MSW_MOCK_API=yes react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "api": "json-server ./src/api/db.json"
@@ -39,5 +40,8 @@
   },
   "devDependencies": {
     "msw": "^0.32.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
