@@ -3,10 +3,6 @@ import { tasksHandlerException } from './api-mocks/handlers';
 import { mswServer } from './api-mocks/msw-server';
 import TaskList from './TaskList';
 
-beforeAll(() => mswServer.listen());
-afterEach(() => mswServer.resetHandlers());
-afterAll(() => mswServer.close());
-
 describe('Component: TaskList', () => {
   it('displays returned tasks on successful fetch', async () => {
     render(<TaskList />);
